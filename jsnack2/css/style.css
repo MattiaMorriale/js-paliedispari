@@ -7,8 +7,8 @@ body{
 }
 
 
-#totale{
-    width: 250px;
+#parola{
+    width: 400px;
     height: 30px;
 
     --glow-color: rgb(188, 254, 232);
@@ -29,6 +29,42 @@ body{
     position: relative;
     transition: all 0.3s;
 }
+
+.button-40{
+
+    --glow-color: rgb(188, 254, 232);
+    --glow-spread-color: rgb(0, 255, 170);
+    --btn-color: rgba(61, 160, 127, 0.554);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 5em 2em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 1em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.button-40:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 2em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+  }
+  
+  .button-40:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+          0 0 2.5em 2em var(--glow-spread-color),
+          inset 0 0 .5em .25em var(--glow-color);
+  }
+
 
 .neonText {
     color: #fff;
